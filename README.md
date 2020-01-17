@@ -26,8 +26,14 @@ Outline
   * Treat it like your API
     * Don't remove flags
   * Use unique error codes when it makes sense
+* Be consistent with your flags
+  * --version / --help
+  * short and long form arguments are nice, most libraries will support this
+  * use '-' for STDIN
 * Adding feature flags
   * --experimental__new__theme
+* Don't be too chatty
+  * Add a verbose flag
 * Making them easy to use
   * People have lots of different ways they like to use their tools.
   * make man pages
@@ -40,3 +46,7 @@ Outline
   * pytest-datadir
   * pytest-tempdir
   * check exit codes
+* Other stdlib/features to check out
+  * tempfile / atexit
+* Other references
+  * [Exploring CLI Best Practices](https://eng.localytics.com/exploring-cli-best-practices/)
