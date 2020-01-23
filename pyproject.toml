@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "mdhtml"
+author = "Zack Lalanne"
+author-email = "zack.lalanne@gmail.com"
+home-page = "http://zacklalanne.com"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires = [
+	"click==7.0",
+	"docopt==0.6.2",
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+	"pytest",
+	"pytest-cov",
+]
